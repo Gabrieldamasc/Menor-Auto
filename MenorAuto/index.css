@@ -5,7 +5,8 @@
 }
 
 body {
-  background: rgba(63, 57, 69, 0.89);
+  background-image: linear-gradient();
+  background: rgba(38, 33, 44, 0.89);
 
 }
 
@@ -13,27 +14,24 @@ body {
 
 a{  
     user-select: none;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     text-decoration: none;
     color: antiquewhite;
     font-weight: 800;
-    font-style: italic;
 }
 header{
-  margin-top: 1em;
+  background-color: rgb(226, 136, 63);
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   height: 50px;
 }
 
 .logo{
-    background-color: black;
     width: 50%;
 }
 .actions{
-    margin-right: 20px;
     display: flex;
     flex-direction: row;
     gap: 25px;
@@ -42,13 +40,30 @@ header{
 /* header */
 
 /* Main*/
-
+.mainicon{
+  height: 100px;
+  width: 100px;
+}
+main div{
+  background-color: aliceblue;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  
+}
 main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 2em;
+
 }
+main h1{
+  margin: 0;
+}
+  main p {
+    display: none;
+  }
 
 /* Media Query*/
 
