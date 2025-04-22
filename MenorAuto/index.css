@@ -59,7 +59,7 @@ main{
 
 }
 main h1{
-  margin: 0;
+  margin: 1;
 }
   main p {
     display: none;
