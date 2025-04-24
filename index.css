@@ -1,4 +1,6 @@
-/* Mobile First */
+/*==================== Mobile First ====================*/
+
+@charset "UTF-8";
 
 *{
     margin: 0;
@@ -17,7 +19,7 @@ body {
   height: 100%;
 }
 
-/* Start header */
+/*==================== Start header ====================*/
 .material-symbols-outlined {
   color: white;
   position: absolute;
@@ -92,9 +94,9 @@ a{
     gap: 25px;
 }
 
-/* End header */
+/*==================== End header ====================*/
 
-/* Start Main*/
+/*==================== Start Main ====================*/
 
 main{
   display: flex;
@@ -130,7 +132,7 @@ main{
 #img-mecanico{
   margin: auto;
   width: 100%;
-  height: 280px;
+  height: 320px;
 }
 
 .main-text{
@@ -187,7 +189,7 @@ main{
 .form-cadastro label{
   color: white;
   font-weight: 600;
-  font-size: 1.2em;
+  font-size: 1.8em;
   margin-bottom: 3px;
 }
 
@@ -200,8 +202,8 @@ main{
 
 .form-cadastro form input{
   border: none;
-  width: 145px;
-  height: 20px;
+  width: 245px;
+  height: 30px;
   border-radius: 6px;
   margin-bottom: 10px;
 }
@@ -213,19 +215,23 @@ main{
   margin-bottom: 10px;
 }
 
-#background-form-cadastro{
-  transform: translate(0px, 40px);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 60%;
-  height: 300px;
-  background-color: white;
+.botao-enviar{
+  width: 150px;
+  height: 30px;
+  font-size: 1.3em;
+  background-color: #000000;
+  color: white;
+  border-radius: 10px;
+  margin-left: 10px;
+  border: none;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-weight: bolder;
 }
 
-/* End Main */
+/*==================== End Main ====================*/
 
-/* Start Footer*/
+/*==================== Start Footer ====================*/
 footer{
   display: flex;
   justify-content: center;
@@ -241,6 +247,7 @@ footer{
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  width: 100%;
 }
 
 .info-footer{
@@ -250,6 +257,12 @@ footer{
   align-items: center;
   flex-direction: column;
   margin: 20px 0px;
+  width: 100%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.34);
+}
+
+#ultimo-a{
+  margin-bottom: 40px;
 }
 
 .info-footer a{
@@ -266,6 +279,30 @@ footer{
   margin-bottom: 20px;
 }
 
+h3{
+  font-size: 1.3em;
+  color: white;
+  font-weight: normal;
+  width: 100px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.formas-de-pagamento{
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.formas-de-pagamento h3{
+  font-size: 1.3em;
+  color: white;
+  font-weight: normal;
+  width: 100px;
+}
+
 .redesocial img{
   width: 40px;
   height: 40px;
@@ -273,17 +310,17 @@ footer{
 }
 
 #img-bandeira-cartoes{
-  width: 350px;
+  width: 340px;
   height: 100px;
 }
 
-/* End Footer*/
+/*==================== End Footer ====================*/
 
 
-/* Media Query*/
+/*==================== Media Query ====================*/
 
 
-/* Tablet */
+/*==================== Tablet ==================== */
 @media (min-width: 768px) and (max-width: 1024px){
   #logo-site{
     width: 350px;
@@ -334,7 +371,7 @@ footer{
     border-radius: 10px;
     padding: 10px;
     background-color: #f8670d;
-    width: 60%;
+    width: 80%;
   }
   
   .form-cadastro label{
@@ -366,11 +403,41 @@ footer{
     margin-bottom: 10px;
   }
 
+  .icons-social{
+    margin-top: 30px;
+  }
+  
+  .info-footer a{
+    font-size: 2.4em;
+  }
+  
+  .redesocial img{
+    width: 70px;
+    height: 70px;
+    filter: invert();
+  }
+  
+  #img-bandeira-cartoes{
+    width: 640px;
+    height: 200px;
+  }
+
+  h3{
+    width: 200px;
+    font-size: 2.3em;
+  }
+
+  .formas-de-pagamento h3{
+    width: 200px;
+    text-align: center;
+    font-size: 2.3em;
+  }
+
 }
 
-/* computador */
+/*==================== computador ====================*/
 @media (min-width: 1025px){
 
 }
 
-/* End Media Query*/
+/*==================== End Media Query ====================*/
