@@ -76,6 +76,10 @@ a{
     flex-direction: column;
     gap: 25px;
 }
+.menu-toggle{
+  width: 50px;
+  height: 50px;
+}
 
 /* header */
 
@@ -92,7 +96,7 @@ a{
 
 .textos{
   margin-bottom: 25px;
-  font-size: 4vh;
+  font-size: 6vh;
   color: white;
   text-align: center;
 }
