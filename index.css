@@ -1,9 +1,12 @@
+/* Mobile First */
+
 *{
     margin: 0;
+    padding: 0px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: antiquewhite;
-    
 }
+
+/*cor laranja: #f8670d */
 
 body {
   background-image: linear-gradient();
@@ -14,8 +17,9 @@ body {
   height: 100%;
 }
 
-/* header */
+/* Start header */
 .material-symbols-outlined {
+  color: white;
   position: absolute;
   right: 20px;
   font-variation-settings:
@@ -25,13 +29,14 @@ body {
   'opsz' 24
 }
 
-
-
-.background-overlay{
-  background-color: rgba(0, 0, 0, 0.806);
+.icon-large{
+  font-size: 45px !important;
 }
 
-
+.background-overlay{
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.626);
+}
 
 .mainicon{
   height: 40px;
@@ -75,6 +80,9 @@ a{
 }
 
 .logo{
+  margin-top: 10px;
+    display: flex;
+    justify-content: center;
     width: 50%;
 }
 
@@ -84,9 +92,17 @@ a{
     gap: 25px;
 }
 
-/* header */
+/* End header */
 
-/* Main*/
+/* Start Main*/
+
+main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
 
 .title{
     margin-top: 20px;
@@ -100,33 +116,57 @@ a{
 .textos{
   margin-bottom: 25px;
   font-size: 4vh;
+  font-weight: bolder;
   color: white;
   text-align: center;
+  width: 80%;
 }
 
 #texto-especial{
-  color: rgb(200, 147, 49);
-  font-size: 3vh;
+  color: #f8670d;
+  font-size: 2.9vh;
+}
+
+#img-mecanico{
+  margin: auto;
+  width: 100%;
+  height: 250px;
 }
 
 .main-text{
   margin: 20px;
   padding: 15px;
-  font-size: 2.5vh;
+  font-size: 1.2em;
   margin: auto;
   width: 80%;
   color: white;
-  background-color: rgba(0, 0, 0, 0.678);
+  background-color: rgba(0, 0, 0, 0.849);
   border-radius: 10px;
   background-position: center;
 }
 
-#imagem-logo-bg{
-  right: 10px;
-  width: 300px;
+.localizacao{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 90%;
   height: 300px;
-  position: absolute;
-  z-index: -1;
+  margin-top: 50px;
+  background-color: #f8670d;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+#h2-locale{
+  text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.772);
+  color: white;
+  float: right;
+  margin-bottom: 10px;
+}
+
+#iframe-maps{
+  border-radius: 10px;
 }
 
 .botoes-categorias{  
@@ -140,7 +180,7 @@ a{
 .button-category{
   margin: 10px;
   width: 100px;
-  background: orange;
+  background: #f8670d;
   border-radius: 40px;
   border: none;
 }
@@ -157,7 +197,9 @@ a{
   background: none;
 }
 
-/* Footer*/
+/* End Main */
+
+/* Start Footer*/
 footer{
   display: flex;
   justify-content: center;
@@ -167,7 +209,7 @@ footer{
 .info-footer{
   display: flex;
   flex-direction: column;
-  background-color: rgba(0, 0, 0, 0.411);
+  background-color: rgb(0, 0, 0);
 }
 
 .info-footer a{
@@ -193,12 +235,58 @@ footer{
     filter: invert();
   }
 
-/* Footer*/
+/* End Footer*/
 
 
 /* Media Query*/
 
-@media (max-width: 1200px){
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1024px){
+  #logo-site{
+    width: 350px;
+    height: 100px;
+    padding: 0px;
+  }
+
+  .main-text{
+    font-size: 2em;
+  }
+
+  .material-symbols-outlined {
+    color: white;
+    position: absolute;
+    right: 20px;
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+  }
+
+  .icon-large{
+    font-size: 80px !important; 
+  }
+
+  #img-mecanico{
+    margin: auto;
+    width: 700px;
+    height: 550px;
+  }
+
+  .localizacao{
+    height: 500px;
+  }
+  
+  #h2-locale{
+    font-size: 2.9em;
+  }
 
 }
-/* Media Query*/
+
+/* computador */
+@media (min-width: 1025px){
+
+}
+
+/* End Media Query*/
