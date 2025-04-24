@@ -49,6 +49,7 @@ h2{
     margin-bottom: 20px;
     font-weight: bolder;
     font-size: 1.9em;
+    text-align: center;
 }
 
 .divs{
@@ -61,6 +62,7 @@ h2{
 }
 
 .divs p{
+    padding: 5px;
     font-size: 1.3em;
 }
 
@@ -117,6 +119,7 @@ form input{
     }
 
     .divs p{
+        padding: 5px;
         font-size: 2.1em;
     }
 

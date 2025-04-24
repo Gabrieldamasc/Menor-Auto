@@ -37,7 +37,7 @@ body {
 
 .background-overlay{
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.626);
+  background-color: rgba(0, 0, 0, 0.726);
 }
 
 .mainicon{
@@ -61,7 +61,7 @@ a{
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  position: relative;
+  position: fixed;
   z-index: 1;
 }
 
@@ -99,6 +99,7 @@ a{
 /*==================== Start Main ====================*/
 
 main{
+  padding-top: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -125,8 +126,11 @@ main{
 }
 
 #texto-especial{
-  color: #f8670d;
+  color: #f8a60d;
   font-size: 2.9vh;
+  padding-bottom: 10px;
+  border-bottom: #f8a60d 1px solid ;
+
 }
 
 #img-mecanico{
@@ -189,8 +193,9 @@ main{
 .form-cadastro label{
   color: white;
   font-weight: 600;
-  font-size: 1.8em;
+  font-size: 1.5em;
   margin-bottom: 3px;
+
 }
 
 .form-cadastro form{
@@ -203,9 +208,12 @@ main{
 .form-cadastro form input{
   border: none;
   width: 245px;
-  height: 30px;
+  height: 40px;
+  font-size: large;
+  font-weight: 400;
   border-radius: 6px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+
 }
 
 .form-cadastro h2{
@@ -213,11 +221,11 @@ main{
   font-weight: bolder;
   font-size: 1.9em;
   margin-bottom: 10px;
+
 }
 
 .botao-enviar{
-  width: 150px;
-  height: 30px;
+ 
   font-size: 1.3em;
   background-color: #000000;
   color: white;
@@ -227,6 +235,17 @@ main{
   margin-top: 10px;
   margin-bottom: 20px;
   font-weight: bolder;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  transition: 250ms;
+
+
+}
+.botao-enviar:hover{
+  scale: 1.2;
+  filter: invert(1);
 }
 
 /*==================== End Main ====================*/
@@ -294,13 +313,16 @@ h3{
   justify-content: center;
   align-items: center;
   flex-direction: column;
+ 
 }
+
 
 .formas-de-pagamento h3{
   font-size: 1.3em;
   color: white;
   font-weight: normal;
-  width: 100px;
+  width: 200px;
+  text-wrap: nowrap;
 }
 
 .redesocial img{
