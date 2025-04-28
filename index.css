@@ -17,6 +17,7 @@ body {
   background-size: cover;
   background-position: center center;
   height: 100%;
+  width: 100%;
 }
 
 /*==================== Start header ====================*/
@@ -40,6 +41,7 @@ body {
 .background-overlay{
   width: 100%;
   background-color: rgba(0, 0, 0, 0.626);
+  height: 100%;
 }
 
 .mainicon{
@@ -158,7 +160,19 @@ main{
   background-color: rgba(0, 0, 0, 0.849);
   border-radius: 10px;
   background-position: center;
+  max-width: 850.741px;
+
 }
+    .main-text p{
+      text-align: center;
+    }
+
+.local-form{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}    
 
 .localizacao{
   display: flex;
@@ -253,6 +267,7 @@ footer{
   background-color: rgb(20, 20, 20);
   border-radius: 15px 15px 0px 0px;
   width: 100%;
+  height: 100%;
 }
 
 .icons-social{
@@ -450,7 +465,8 @@ main{
 }
 
 /*==================== computador ====================*/
-@media (min-width: 1024px){
+
+@media (min-width: 1024px) and (max-width: 2814px){
 .header{
   justify-content: space-between;
 }
@@ -471,6 +487,36 @@ main{
   }
   .material-symbols-outlined{
     transform: scale(0);
+  }
+  .local-form{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    gap: 20px;
+    
+  }    
+    .localizacao{
+      margin: 0;
+    }
+    .form-cadastro{
+      margin: 0;
+    }
+}
+
+/*==================== TV ====================*/
+
+@media (min-width: 2814px){
+  body{
+    height: 100vh;
+  }
+  footer{
+    display: flex;
+    justify-content: start;
+    
   }
 }
 /*==================== End Media Query ====================*/
