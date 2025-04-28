@@ -28,7 +28,9 @@ body.DarkMode{
   background-position: center;
   background-size: contain;
 }
-
+footer.DarkMode{
+  background-color: rgb(0, 0, 0);
+}
 
 /*==================== Start header ====================*/
 .material-symbols-outlined {
@@ -220,7 +222,7 @@ main{
   border-radius: 10px;
   padding: 10px;
   background-color: #f8670d;
-  width: 80%;
+  width: 40%;
   box-shadow: 2px 2px 15px #f8670dc5;
   transition: 250ms;
 }
@@ -255,24 +257,23 @@ main{
 }
 
 .botao-enviar{
-      border: none;
-      border-radius: 10px;
-      width: auto;
-      height: 30px;
-      font-size: 1.3em;
-      padding: 10px;
-      padding-left: 20px;
-      padding-right: 20px;
-      
-        background-color: #000000;
-        color: white;
-
+  border: none;
+  border-radius: 10px;
+  width: auto;
+  height: 40px;
+  font-size: 1.3em;
+  padding: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
+  background-color: #000000;
+  color: white;
   font-weight: bolder;
   cursor: pointer;
   display: flex;
-  align-items: center;
+  align-items: center; 
   transition: 250ms;
 }
+
 .botao-enviar:hover{
   scale: 1.2;
 }
@@ -306,11 +307,13 @@ footer{
   flex-direction: column;
   margin: 20px 0px;
   width: 100%;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.34);
   margin-bottom: 40px;
 }
 
 .info-footer a{
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.34);
   font-weight: normal;
   color: white;
 }
@@ -555,7 +558,9 @@ main{
     color: #f8670d;
   }
 }
-
+footer.DarkMode{
+  background-color: rgba(0, 0, 0, 0);
+}
 /*==================== TV ====================*/
 
 @media (min-width: 2814px){

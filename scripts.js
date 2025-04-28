@@ -9,7 +9,7 @@ const Modo = document.querySelector(".MudarModo");
 const botão = document.querySelector(".botao-enviar");
 const backoverlay = document.querySelector(".background-overlay");
 const gogmap = document.querySelector("#iframe-maps");
-
+const footer = document.querySelector("footer");
 //Variaveis
 
 Modo.addEventListener("click", () => {
@@ -19,4 +19,5 @@ Modo.addEventListener("click", () => {
     botão.classList.toggle("DarkMode")
     corpo.classList.toggle("DarkMode")
     gogmap.classList.toggle("DarkMode")
+    footer.classList.toggle("DarkMode")
 });
