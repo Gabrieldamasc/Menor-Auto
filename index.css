@@ -20,6 +20,7 @@ body {
   width: 100%;
   transition: 250ms;
 }
+/*==================== DarkMode ====================*/
 body.DarkMode{
   background-color: #252525;
   background-image: url(images/background.png);
@@ -254,20 +255,27 @@ main{
 }
 
 .botao-enviar{
-  width: 150px;
-  height: 30px;
-  font-size: 1.3em;
-  background-color: #000000;
-  color: white;
-  border-radius: 10px;
-  margin-left: 10px;
-  border: none;
-  margin-top: 10px;
-  margin-bottom: 20px;
+      border: none;
+      border-radius: 10px;
+      width: auto;
+      height: 30px;
+      font-size: 1.3em;
+      padding: 10px;
+      padding-left: 20px;
+      padding-right: 20px;
+      
+        background-color: #000000;
+        color: white;
+
   font-weight: bolder;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
   transition: 250ms;
 }
-
+.botao-enviar:hover{
+  scale: 1.2;
+}
 /*==================== End Main ====================*/
 
 /*==================== Start Footer ====================*/
@@ -299,9 +307,6 @@ footer{
   margin: 20px 0px;
   width: 100%;
   border-bottom: 1px solid rgba(255, 255, 255, 0.34);
-}
-
-#ultimo-a{
   margin-bottom: 40px;
 }
 
@@ -490,6 +495,7 @@ main{
 
 @media (min-width: 1024px) and (max-width: 2814px){
 
+/*==================== Modo Escuro ====================*/
   body.DarkMode{
     background-color: #252525;
     background-image: url(images/background\ -\ Editado.png);
@@ -497,6 +503,7 @@ main{
     background-position: center;
     background-size: cover;
   }
+/*==================== Modo Escuro ====================*/
 
 .header{
   justify-content: space-between;
@@ -536,6 +543,17 @@ main{
     .form-cadastro{
       margin: 0;
     }
+  .info-footer{
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+  }
+  .info-footer a{
+    transition: 250ms;
+  }
+  .info-footer a:hover{
+    color: #f8670d;
+  }
 }
 
 /*==================== TV ====================*/
@@ -578,3 +596,7 @@ main{
   background-color: #fdfdfd;
   color: rgb(0, 0, 0);
 }
+    .botao-enviar.DarkMode:hover{
+      color: #fdfdfd;
+      background-color: #f8670d;
+    }
