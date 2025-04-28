@@ -365,6 +365,8 @@ h3{
   height: 100px;
 }
 
+
+
 /*==================== End Footer ====================*/
 
 
@@ -518,10 +520,12 @@ main{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    list-style-type: none;
     align-items: stretch;
     gap: 5%;
     width: 30%;
     margin-right: 10px;
+    margin: 20px;
   }
 
   main{
