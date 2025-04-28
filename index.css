@@ -18,7 +18,16 @@ body {
   background-position: center center;
   height: 100%;
   width: 100%;
+  transition: 250ms;
 }
+body.DarkMode{
+  background-color: #252525;
+  background-image: url(images/background.png);
+  background-repeat: repeat;
+  background-position: center;
+  background-size: contain;
+}
+
 
 /*==================== Start header ====================*/
 .material-symbols-outlined {
@@ -186,6 +195,7 @@ main{
   box-shadow: 2px 2px 15px #f8670dc5;
   border-radius: 10px;
   padding: 10px;
+  transition: 250ms;
 }
 
 #h2-locale{
@@ -211,6 +221,7 @@ main{
   background-color: #f8670d;
   width: 80%;
   box-shadow: 2px 2px 15px #f8670dc5;
+  transition: 250ms;
 }
 
 .form-cadastro label{
@@ -254,6 +265,7 @@ main{
   margin-top: 10px;
   margin-bottom: 20px;
   font-weight: bolder;
+  transition: 250ms;
 }
 
 /*==================== End Main ====================*/
@@ -350,11 +362,21 @@ h3{
 
 /*==================== Tablet ==================== */
 @media (min-width: 768px) and (max-width: 1024px){
+  body.DarkMode{
+    background-color: #252525;
+    background-image: url(images/background.png);
+    background-repeat: repeat;
+    background-position: center;
+    background-size: contain;
+  }
+ 
+ 
   #logo-site{
     width: 350px;
     height: 100px;
     padding: 0px;
   }
+
 main{
   padding-top: 90px;
 }
@@ -467,6 +489,15 @@ main{
 /*==================== computador ====================*/
 
 @media (min-width: 1024px) and (max-width: 2814px){
+
+  body.DarkMode{
+    background-color: #252525;
+    background-image: url(images/background\ -\ Editado.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
 .header{
   justify-content: space-between;
 }
@@ -520,3 +551,30 @@ main{
   }
 }
 /*==================== End Media Query ====================*/
+
+/*==================== Modo Escuro ====================*/
+
+
+.background-overlay.DarkMode{
+  background-color: #000000a6;
+}
+.localizacao.DarkMode{
+  background-color: #000000;
+  color: aliceblue;
+  box-shadow: 2px 2px 15px #1d0201c5;
+}
+
+#iframe-maps.DarkMode{
+  filter: brightness(70%);
+}
+
+.form-cadastro.DarkMode{
+  background-color: #000000;
+  color: aliceblue;
+  box-shadow: 2px 2px 15px #1d0201c5;
+}
+
+.botao-enviar.DarkMode{
+  background-color: #fdfdfd;
+  color: rgb(0, 0, 0);
+}
