@@ -4,11 +4,12 @@
     padding: 0px;
     margin: 0px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
 body{
-    background-image: url(images/background_-_Editado.webp);
+    background-image: url(images/background-secundary.jpeg);
+    background-color: rgb(19, 18, 18);
     background-repeat: no-repeat;
     background-position: right;
     background-size: cover;
@@ -37,6 +38,13 @@ body{
     text-decoration: none;
 }
 
+#botao-voltar-para-main svg {
+    fill: rgb(255, 255, 255); /* Cor do SVG para combinar com o texto */
+    width: 1.5em; /* Tamanho proporcional ao texto */
+    height: 1.5em; /* Tamanho proporcional ao texto */
+    vertical-align: text-top; /* Alinha o SVG com o texto */
+}
+
 h1{
     font-size: 2.4em;
     text-align: center;
@@ -53,7 +61,8 @@ h2{
 }
 
 .divs{
-    background-color: rgba(0, 0, 0, 0.39);
+    text-align: center;
+    
     width: 80%;
     border-radius: 10px;
     margin: auto;
@@ -61,9 +70,28 @@ h2{
     margin-bottom: 50px;
 }
 
+#btn-fale-conosco{
+    text-decoration: none;
+    padding: 1rem;
+    background-color: #f8670d;
+    border-radius: 20px;
+    border: none;
+    font-size: 1.2em;
+    font-weight: bolder;
+    color: whitesmoke;
+}
+
+#btn-fale-conosco svg {
+    fill: whitesmoke; /* Cor do SVG para combinar com o texto */
+    width: 1.2em; /* Tamanho proporcional ao texto */
+    height: 1.2em; /* Tamanho proporcional ao texto */
+    vertical-align: text-top; /* Alinha o SVG com o texto */
+    margin-left: 1em; /* Espaço entre o SVG e o texto */
+}
 .divs p{
     padding: 5px;
     font-size: 1.3em;
+    color: rgb(255, 255, 255);
 }
 
 .form-contato{
@@ -106,6 +134,7 @@ form input{
     height: 30px;
     font-size: 1.3em;
 }
+
 
 @media (min-width: 768px) and (max-width: 1024px){
     #botao-voltar-para-main, .botao-enviar{
