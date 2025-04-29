@@ -24,7 +24,7 @@ const botão = document.querySelector(".botao-enviar");
 const backoverlay = document.querySelector(".background-overlay");
 const gogmap = document.querySelector("#iframe-maps");
 const footer = document.querySelector("footer");
-//Variaveis
+
 
 Modo.addEventListener("click", () => {
     backoverlay.classList.toggle("DarkMode")
