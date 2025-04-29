@@ -9,7 +9,7 @@
     <title>MenorAutoPeças</title>
     <link rel="stylesheet" href="index.css">
     <link rel="shortcut icon" href="images/icone-empresa.ico" type="image/x-icon">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 
 <body>
@@ -21,14 +21,23 @@
                 <img id="logo-site" class="mainicon" src="images/Menor_Preço-logo.png" alt="">
             </div>
 
-            <span class="material-symbols-outlined icon-large">
-                menu
-            </span>
+            <div class="menu-toggle">
+                <i id="menu-icon" class="fas fa-bars"></i>
+            </div>
+
 
             <nav class="actions">
                 <a href="">Produtos</a>
                 <a href="#ultimo-a">Suporte</a>
                 <a href="">Contato</a>
+
+            <nav class="menu">
+                <ul class="opcoes">                    
+                    <a href="produtos.html"><li>Produtos</li></a>
+                    <a href="suporte.html"><li>Suporte</li></a>
+                    <a href="#contato"><li>Contato</li></a>
+                </ul>
+
             </nav>
             <button class="MudarModo">Modo Escuro/Claro</button>
 
@@ -104,9 +113,15 @@
                 </div>
 
                 <h3>Fale Conosco</h3>
+
                 <div class="redesocial">
                     <a href="https://www.instagram.com/menorpreco.autopecas/" target="_blank"><img src="images/instagram-icon.png" alt="ícone logo instagram"></a>
                     <a href="https://l.instagram.com/?u=https%3A%2F%2Fwa.link%2F5vr51r%3Ffbclid%3DPAZXh0bgNhZW0CMTEAAaeLaN7EDOS6aXnsslkIlEKRVL9EGbdE64Xy20w-wjEqQ5aJvkz0cta4bK7AOA_aem_bobHZaMfp4J0BE82mhN7gA&e=AT0fW7wLlXKhu9dwj4EBQkfGfbgtV76kQAfFbdLay3ElXciEFLY0vwBC0H_BFjawBd-IsnrViY1jORfmySY6Qxef09Z4m93H_KjTtg" target="_blank"><img src="images/whatsapp_-icon.png" alt="ícone logo whatsapp"></a>
+=======
+                <div id="contato" class="redesocial">
+                    <img src="images/instagram-icon.png" alt="ícone logo instagram">
+                    <img src="images/whatsapp_-icon.png" alt="ícone logo whatsapp">
+
                 </div>
 
             </div>
