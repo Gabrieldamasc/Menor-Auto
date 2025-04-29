@@ -31,9 +31,9 @@ const footer = document.querySelector("footer");
 
 // Para cada "botão" ou seja, objeto do array, adicione um event listener.
 
-Modo.forEach((botão) => {
+Modo.forEach((x) => {
     
-botão.addEventListener("click", () => {
+x.addEventListener("click", () => {
     backoverlay.classList.toggle("DarkMode")
     localiza.classList.toggle("DarkMode")
     formulario.classList.toggle("DarkMode")
