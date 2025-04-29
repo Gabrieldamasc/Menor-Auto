@@ -550,9 +550,11 @@ main{
     display: flex;
     flex-direction: row;
     gap: 80px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.34);
   }
   .info-footer a{
     transition: 250ms;
+    border-bottom: none;
   }
   .info-footer a:hover{
     color: #f8670d;
