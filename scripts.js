@@ -21,7 +21,7 @@ const corpo = document.body;
 const header = document.querySelector(".header");
 const localiza = document.querySelector(".localizacao");
 const formulario = document.querySelector(".form-cadastro");
-const Modo = document.querySelector(".MudarModo");
+const Modo = document.querySelectorAll(".MudarModo"); //Um array que considera todos os elementos com a classe .MudarModo como um objeto
 const botão = document.querySelector(".botao-enviar");
 const backoverlay = document.querySelector(".background-overlay");
 const gogmap = document.querySelector("#iframe-maps");
@@ -29,8 +29,11 @@ const footer = document.querySelector("footer");
 
 //Variaveis
 
+// Para cada "botão" ou seja, objeto do array, adicione um event listener.
 
-Modo.addEventListener("click", () => {
+Modo.forEach((botão) => {
+    
+botão.addEventListener("click", () => {
     backoverlay.classList.toggle("DarkMode")
     localiza.classList.toggle("DarkMode")
     formulario.classList.toggle("DarkMode")
@@ -39,6 +42,6 @@ Modo.addEventListener("click", () => {
     gogmap.classList.toggle("DarkMode")
     footer.classList.toggle("DarkMode")
 
+    });
 });
-
 
