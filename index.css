@@ -13,9 +13,9 @@
 body {
   background-image: linear-gradient();
   background-image: url(images/background-mobile.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
+  background-repeat: repeat;
+  background-size: contain;
+  background-position: center;
   height: 100%;
   width: 100%;
   transition: 250ms;
@@ -218,9 +218,10 @@ main{
 
 }
 .main-img-text{
+  width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -233,16 +234,14 @@ main{
       }
 
       .main-text{
-        margin: 20px;
         padding: 15px;
         font-size: 1.2em;
-        margin: auto;
         width: 80%;
         color: white;
         background-color: rgba(0, 0, 0, 0.849);
         border-radius: 10px;
         background-position: center;
-        max-width: 850.741px;
+        max-width: 650.741px;
 
       }
           .main-text p{
@@ -257,17 +256,18 @@ main{
 }    
 
 .localizacao{
+  max-width: 600px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   width: 90%;
-  height: 300px;
+  height: 290px;
   margin-top: 50px;
   background-color: #f8670d;
   box-shadow: 2px 2px 15px #f8670dc5;
   border-radius: 10px;
-  padding: 10px;
+  padding: 5px;
   transition: 250ms;
 }
 
@@ -295,6 +295,7 @@ main{
   width: 40%;
   box-shadow: 2px 2px 15px #f8670dc5;
   transition: 250ms;
+  max-width: 600px ;
 }
 
 .form-cadastro label{
@@ -469,7 +470,7 @@ h3{
 
   body.DarkMode{
     background-color: #252525;
-    background-image: url(images/background-desktop.jpeg);
+    background-image: url(images/background-desktopi.jpeg);
     background-repeat: repeat;
     background-position: center;
     background-size: contain;
@@ -599,14 +600,14 @@ main{
 /*==================== Modo Escuro ====================*/
   body.DarkMode{
     background-color: #252525;
-    background-image: url(images/background-desktop.png);
+    background-image: url(images/background-desktopi.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
   }
 /*==================== Modo Escuro ====================*/
 body{
-  background-image: url(images/background-desktop.png);
+  background-image: url(images/background-desktopi.png);
 }
 .background-overlay{
   background-color: rgba(53, 42, 37, 0.76);
@@ -640,12 +641,18 @@ body{
     .title{
       width: 100%;
     }
+
     .main-img-text{
+      gap: 20px;
       display: flex;
       flex-direction: row-reverse;
-      justify-content: center;
+      justify-content: space-around;
       align-items: center;
-    }
+    }   
+        #img-mecanico{
+          margin: 0;
+
+        }
 
   .material-symbols-outlined{
     transform: scale(0);
@@ -657,12 +664,12 @@ body{
     width: 100%;
     align-items: center;
     justify-content: space-around;
-
     margin-bottom: 50px;
     gap: 20px;
     
   }    
     .localizacao{
+      max-width: 600px ;
       margin: 0;
     }
 
