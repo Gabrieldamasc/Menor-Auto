@@ -33,7 +33,6 @@ footer.DarkMode{
 }
 
 /*==================== Start header ====================*/
-
 .material-symbols-outlined {
   color: white;
   position: absolute;
@@ -55,10 +54,6 @@ footer.DarkMode{
   width: 100%;
   background-color: rgba(0, 0, 0, 0.626);
   height: 100%;
-
-.background-overlay{
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.726);
 }
 
 .mainicon{
@@ -100,12 +95,6 @@ a{
   scale: 1.3;
 }
 
-
-  position: fixed;
-  z-index: 1;
-}
-
-
 #logo-site{
   width: 180px;
   height: 60px;
@@ -113,54 +102,17 @@ a{
 }
 
 .logo{
-
   user-select: none;
     margin-top: 10px;
     display: flex;
     justify-content: center;
     width: 50%;
-
-  margin-top: 10px;
-  display: flex;
-  justify-content: center;
-  width: 50%;
-
 }
 
-.menu-toggle {
-  color: white;
-  position: absolute;
-  right: 18px;
-  font-size: 35px !important;
-}
-
-.menu{
-  display: none;
-  flex-direction: column;
-  position: absolute;
-  top: 70px;
-  left: 0;
-  background-color: #272828;
-  width: 100%;
-  text-align: right;
-}
-
-.menu.active {
-  display: flex;
-}
-
-.menu ul {
-  display: block;
-}
-
-.menu li {
-  margin: 15px 0;
-  padding: 30px 20px;
-  text-align: center;
-}
-
-.menu a {
-  font-weight: 400;
+.actions{
+    display: none;
+    flex-direction: column;
+    gap: 25px;
 }
 .actions a{
   padding: 5px;
@@ -181,7 +133,7 @@ main{
 }
 
 .title{
-    margin-top: 60px;
+    margin-top: 20px;
     margin-bottom: 20px;
     display: flex;
     flex-direction: column;
@@ -199,11 +151,8 @@ main{
 }
 
 #texto-especial{
-  color: #f8a60d;
+  color: #f8670d;
   font-size: 2.9vh;
-  padding-bottom: 10px;
-  border-bottom: #f8a60d 1px solid ;
-
 }
 
 #img-mecanico{
@@ -281,9 +230,8 @@ main{
 .form-cadastro label{
   color: white;
   font-weight: 600;
-  font-size: 1.5em;
+  font-size: 1.8em;
   margin-bottom: 3px;
-
 }
 
 .form-cadastro form{
@@ -296,12 +244,9 @@ main{
 .form-cadastro form input{
   border: none;
   width: 245px;
-  height: 40px;
-  font-size: large;
-  font-weight: 400;
+  height: 30px;
   border-radius: 6px;
-  margin-bottom: 15px;
-
+  margin-bottom: 10px;
 }
 
 .form-cadastro h2{
@@ -309,18 +254,13 @@ main{
   font-weight: bolder;
   font-size: 1.9em;
   margin-bottom: 10px;
-
 }
 
 .botao-enviar{
-
   border: none;
   border-radius: 10px;
   width: auto;
   height: 40px;
-
- 
-
   font-size: 1.3em;
   padding: 10px;
   padding-left: 25px;
@@ -328,24 +268,10 @@ main{
   background-color: #000000;
   color: white;
   font-weight: bolder;
-
   cursor: pointer;
   display: flex;
   align-items: center; 
   transition: 250ms;
-
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-left: 10px;
-  padding-right: 10px;
-  transition: 250ms;
-
-
-}
-.botao-enviar:hover{
-  scale: 1.2;
-  filter: invert(1);
-
 }
 
 .botao-enviar:hover{
@@ -416,16 +342,13 @@ h3{
   justify-content: center;
   align-items: center;
   flex-direction: column;
- 
 }
-
 
 .formas-de-pagamento h3{
   font-size: 1.3em;
   color: white;
   font-weight: normal;
-  width: 200px;
-  text-wrap: nowrap;
+  width: 100px;
 }
 
 .redesocial img{
@@ -447,7 +370,6 @@ h3{
 
 /*==================== Tablet ==================== */
 @media (min-width: 768px) and (max-width: 1024px){
-
   body.DarkMode{
     background-color: #252525;
     background-image: url(images/background.png);
@@ -457,16 +379,6 @@ h3{
   }
  
  
-
-  
-  .menu-toggle {
-    font-size: 45px !important;
-  }
-  
-  .menu{
-    top: 100px;
-  }
-
   #logo-site{
     width: 350px;
     height: 100px;
@@ -478,6 +390,21 @@ main{
 }
   .main-text{
     font-size: 2em;
+  }
+
+  .material-symbols-outlined {
+    color: white;
+    position: absolute;
+    right: 20px;
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+  }
+
+  .icon-large{
+    font-size: 80px !important; 
   }
 
   #img-mecanico{
@@ -568,7 +495,6 @@ main{
 }
 
 /*==================== computador ====================*/
-
 
 @media (min-width: 1024px) and (max-width: 2814px){
 
@@ -665,11 +591,6 @@ footer.DarkMode{
 
 #iframe-maps.DarkMode{
   filter: brightness(70%);
-
-  .menu-toggle {
-    display: none;
-  }
-
 }
 
 .form-cadastro.DarkMode{
