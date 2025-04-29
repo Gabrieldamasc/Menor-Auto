@@ -357,6 +357,9 @@ h3{
   filter: invert();
 }
 
+.redesocial .redesocial-icon{
+  margin: 20px;
+}
 #img-bandeira-cartoes{
   width: 340px;
   height: 100px;
