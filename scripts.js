@@ -41,5 +41,4 @@ Modo.addEventListener("click", () => {
 
 });
 
-});
 
