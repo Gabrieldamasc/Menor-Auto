@@ -25,6 +25,7 @@ const botão = document.querySelector(".botao-enviar");
 const backoverlay = document.querySelector(".background-overlay");
 const gogmap = document.querySelector("#iframe-maps");
 const footer = document.querySelector("footer");
+const Menu = document.querySelector(".menu-toggle");
 const toogleFooter = document.querySelector(".info-footer a")
 //Variaveis
 
@@ -40,6 +41,9 @@ x.addEventListener("click", () => {
     corpo.classList.toggle("DarkMode")
     gogmap.classList.toggle("DarkMode")
     footer.classList.toggle("DarkMode")
+    Menu.classList.toggle("DarkMode")
+
+
     document.querySelectorAll('.info-footer a').forEach(link => {
         link.classList.toggle('corpreta');
     });
