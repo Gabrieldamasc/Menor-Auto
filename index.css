@@ -686,12 +686,26 @@ body{
   }
 
   .info-footer a:hover{
-    color: #f8670d;
+    color: #f8670d !important;
   }
 }
 
 footer.DarkMode{
   background-color: #ebebeb;
+}
+footer.DarkMode h3{
+  color: black;
+}
+footer.DarkMode .redesocial img{
+  filter: invert(0);
+}
+.info-footer a.corpreta{
+  color: black !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.781);
+  transition: 250ms;
+}
+.info-footer a.corpreta:hover{
+  color: #f8670d !important;
 }
 
 /*==================== TV ====================*/
