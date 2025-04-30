@@ -50,9 +50,9 @@ x.addEventListener("click", () => {
 
     const imgMecanico = document.querySelector("#img-mecanico");
         if (corpo.classList.contains("DarkMode")) {
-            imgMecanico.src = "images/mecanico-1.png"; // Caminho da imagem para o tema escuro
+            imgMecanico.src = "images/mecanico-1.png";
         } else {
-            imgMecanico.src = "images/mecanico-2.png"; // Caminho da imagem para o tema claro
+            imgMecanico.src = "images/mecanico-2.png";
         }
 });
 });
