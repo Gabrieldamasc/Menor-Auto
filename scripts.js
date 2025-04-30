@@ -47,5 +47,12 @@ x.addEventListener("click", () => {
     document.querySelectorAll('.info-footer a').forEach(link => {
         link.classList.toggle('corpreta');
     });
+
+    const imgMecanico = document.querySelector("#img-mecanico");
+        if (corpo.classList.contains("DarkMode")) {
+            imgMecanico.src = "images/mecanico-1.png"; // Caminho da imagem para o tema escuro
+        } else {
+            imgMecanico.src = "images/mecanico-2.png"; // Caminho da imagem para o tema claro
+        }
 });
 });
